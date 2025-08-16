@@ -29,24 +29,24 @@
  
  1. Clone the repository:
 		```bash
-		git clone https://github.com/vkkd12/Collaborative-Code-Editor-Frontend.git
+	   	git clone https://github.com/vkkd12/Collaborative-Code-Editor-Frontend.git
 		cd collaborative-editor-frontend
-		```
+	   ```
  2. Install dependencies:
 		```bash
-		npm install
+	   	npm install
 		# or
 		yarn install
-		```
- 3. Configure environment variables:
+	   ```
+ 4. Configure environment variables:
 		- Create a `.env.local` file and add your API endpoints and keys as needed.
  
- 4. Run the development server:
+ 5. Run the development server:
 		```bash
-		npm run dev
+	   	npm run dev
 		# or
 		yarn dev
-		```
+	   ```
 		The app will be available at [http://localhost:3000](http://localhost:3000).
  
  ## Folder Structure
