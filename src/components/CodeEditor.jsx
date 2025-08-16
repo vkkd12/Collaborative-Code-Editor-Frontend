@@ -42,8 +42,8 @@ export default function CodeEditor({ fileId, initialContent, projectId }) {
     return () => {
       socket.emit('collab:leave', { roomId: fileId });
       socket.off('collab:op');
+      socket.off('collab:sync');
     };
-    socket.off('collab:sync');
   }, [fileId]);
 
   const handleEditorChange = (value, event) => {
