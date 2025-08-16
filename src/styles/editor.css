@@ -1,0 +1,21 @@
+/* Editor container full height */
+.editor-container {
+  height: 100%;
+  width: 100%;
+}
+
+/* Optional scrollbar styling */
+.editor-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.editor-container::-webkit-scrollbar-thumb {
+  background-color: rgba(100, 100, 100, 0.5);
+  border-radius: 4px;
+}
+
+.editor-container::-webkit-scrollbar-track {
+  background-color: rgba(200, 200, 200, 0.2);
+}
+
+/* Tailwind classes already handle most padding/margin/font */
