@@ -24,30 +24,38 @@
  
  - Node.js >= 18.x
  - npm or yarn
- 
- ### Installation
- 
- 1. Clone the repository:
-		```bash
-	   	git clone https://github.com/vkkd12/Collaborative-Code-Editor-Frontend.git
-		cd collaborative-editor-frontend
-	   ```
- 2. Install dependencies:
-		```bash
-	   	npm install
-		# or
-		yarn install
-	   ```
- 4. Configure environment variables:
-		- Create a `.env.local` file and add your API endpoints and keys as needed.
- 
- 5. Run the development server:
-		```bash
-	   	npm run dev
-		# or
-		yarn dev
-	   ```
-		The app will be available at [http://localhost:3000](http://localhost:3000).
+
+### Installation
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/vkkd12/Collaborative-Code-Editor-Frontend.git
+   cd Collaborative-Code-Editor-Frontend
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+
+3. **Configure environment variables:**
+   - Create a `.env.local` file in the project root.
+   - Add your API endpoints and keys as needed, for example:
+     ```env
+     NEXT_PUBLIC_API_URL=http://localhost:4000
+     NEXT_PUBLIC_WS_URL=ws://localhost:4000
+     ```
+
+4. **Run the development server:**
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
+   The app will be available at [http://localhost:3000](http://localhost:3000).
+
  
  ## Folder Structure
  
