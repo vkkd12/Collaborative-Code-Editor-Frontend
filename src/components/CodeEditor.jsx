@@ -25,6 +25,7 @@ export default function CodeEditor({ fileId, initialContent, projectId }) {
     socket.emit('collab:sync:request', { roomId: fileId });
 
     socket.on('collab:op', ({ op }) => {
+      console.log("Received op:", op); // Debug
       if (op.type === 'insert') {
         setContent((prev) => prev.slice(0, op.index) + (op.text || '') + prev.slice(op.index));
       }
@@ -35,6 +36,7 @@ export default function CodeEditor({ fileId, initialContent, projectId }) {
 
     // Handle SYNC event to update content
     socket.on('collab:sync', ({ content: syncContent }) => {
+      console.log("SYNC received:", syncContent); // Debug
       if (typeof syncContent === 'string') {
         setContent(syncContent);
       }
