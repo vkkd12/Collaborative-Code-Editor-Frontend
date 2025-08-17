@@ -9,7 +9,7 @@ export default function Sidebar() {
   const router = useRouter();
 
   const handleOpenProject = (projectId) => {
-    router.push(`/editor/${projectId}/new`);
+    router.push(`/projects/${projectId}`);
   };
 
   return (
